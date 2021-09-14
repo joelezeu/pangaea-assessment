@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 public class Publisher {
     @PostMapping("/{topic}")
     public ResponseEntity<?> publish(@PathVariable String topic, @RequestBody ReqBody requestBody) {
+
         return null;
     }
 }
