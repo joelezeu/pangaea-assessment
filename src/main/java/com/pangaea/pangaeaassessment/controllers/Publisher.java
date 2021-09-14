@@ -1,12 +1,10 @@
 package com.pangaea.pangaeaassessment.controllers;
 
+import com.pangaea.pangaeaassessment.domain.ReqBody;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @RestController
@@ -14,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class Publisher {
     @PostMapping("/{topic}")
-    public ResponseEntity<?> publish(@PathVariable String topic) {
+    public ResponseEntity<?> publish(@PathVariable String topic, @RequestBody ReqBody requestBody) {
         return null;
     }
 }
