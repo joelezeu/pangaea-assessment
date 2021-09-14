@@ -4,6 +4,6 @@ import lombok.Data;
 
 @Data
 public class ResBody {
-    private String url;
+    private Object data;
     private String topic;
 }
